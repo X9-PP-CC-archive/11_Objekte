@@ -33,32 +33,59 @@
 /***** Objekte 1 Daten/Funktionen *******/
 
 
-let person = {
-                firstName:"Evtim",
-                familyName:"Trenev",
-                salary: [120000,160000],
-                permission: true,       
-                sayHello:
-                        function(){
-                            return "Hallo " + this.firstName + "!";
+// let person = {
+//                 firstName:"Evtim",
+//                 familyName:"Trenev",
+//                 salary: [120000,160000],
+//                 permission: true,       
+//                 sayHello:
+//                         function(){
+//                             return "Hallo " + this.firstName + "!";
+//                         }
+//             };
+
+
+// output(person);
+// output(person.firstName);
+// output(person.familyName);
+// output(person.salary[1]);
+// output(person.permission);
+
+// // const txt =     "Ich bin " + person.firstName + " " +
+// //                  person.familyName +
+// //                  " und verdiene " + 
+// //                  person.salary[1] + " p.a";
+
+// // output(txt);
+
+// output(person.sayHello());
+
+
+
+/***** Objekte 2 - Hierarchie *******/
+
+// Tiefer, tiefer - Irgendwo in der Tiefe gibt es ein Licht // K.Bush
+// Der Baikalsee ist mit 1642 m der tiefste See der Erde. ...
+// deep - deeper - deepest
+// nested object {{{}}}
+
+let baikal = {
+                value:"10m",
+                deep:{
+                        deeper:{
+                                    deepest:"Das Licht - auf 1642m!",
+                                    temperature: "4 Grad Celsius"
                         }
+                    }
             };
 
+output(baikal);
+output(baikal.value);
+output(baikal.deep.deeper.deepest);
+output(baikal.deep.deeper.temperature);
 
-output(person);
-output(person.firstName);
-output(person.familyName);
-output(person.salary[1]);
-output(person.permission);
 
-// const txt =     "Ich bin " + person.firstName + " " +
-//                  person.familyName +
-//                  " und verdiene " + 
-//                  person.salary[1] + " p.a";
 
-// output(txt);
-
-output(person.sayHello());
 
 
 
